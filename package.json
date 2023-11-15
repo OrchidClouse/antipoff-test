@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-db": "json-server db.json -m ./node_modules/json-server-auth --port 3001",
-    "deploy": "concurrently \"npm run start\" \"npm run start-db\""
+    "deploy": "concurrently \"npm run build\" \"serve -s build\" \"npm run start-db\""
   },
   "eslintConfig": {
     "extends": [

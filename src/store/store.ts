@@ -1,9 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { authSlice } from './authSlice';
 import { fetchUserApi } from './api/fetchUserApiSlice';
 import { authUserApi } from './api/authUserApiSlice';
 import { setupListeners } from '@reduxjs/toolkit/query';
-import likeReducer from './likeSlice'; // импортируйте likeSlice
+import likeReducer from './likeSlice';
 
 function saveToLocalStorage(state: any) {
   try {
@@ -29,8 +28,7 @@ const preloadedState = loadFromLocalStorage();
 
 export const store = configureStore({
   reducer: {
-    auth: authSlice.reducer,
-    like: likeReducer, // добавьте likeSlice в reducer
+    like: likeReducer,
     [fetchUserApi.reducerPath]: fetchUserApi.reducer,
     [authUserApi.reducerPath]: authUserApi.reducer
   },

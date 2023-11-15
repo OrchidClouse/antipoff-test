@@ -1,19 +1,7 @@
-import { HeaderComponent } from 'components';
-import React from 'react';
-
 import { MainPage, SignupPage, LoginPage, ProfilePage } from 'view';
 import {
-  Form,
-  Link,
-  Outlet,
   RouterProvider,
   createBrowserRouter,
-  redirect,
-  useActionData,
-  useFetcher,
-  useLocation,
-  useNavigation,
-  useRouteLoaderData,
 } from "react-router-dom";
 
 const router = createBrowserRouter([

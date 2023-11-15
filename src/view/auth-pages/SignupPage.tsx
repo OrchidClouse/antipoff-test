@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Form.module.scss'
 import { Button, Input } from 'components'
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks'
-import { persistUser, signup } from 'store/authSlice'
+import { useAppDispatch } from '../../hooks/reduxHooks'
 import { useNavigate } from 'react-router-dom'
 import { useRegisterMutation } from 'store/api/authUserApiSlice'
 

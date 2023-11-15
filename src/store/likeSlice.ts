@@ -1,7 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { User } from '../types/users';
-import { useNavigate } from 'react-router-dom';
-// import { RootState } from '@reduxjs/toolkit/query';
 import { RootState } from './store';
 
 export interface LikeState {
