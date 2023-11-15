@@ -1,0 +1,51 @@
+.card_container{
+	width: 305px;
+	height: 263px;
+	padding: 36px, 80px, 20px, 80px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+	cursor: pointer;
+
+
+	
+}
+
+.user_icon{
+	width: 124px;
+	height: 124px;
+	border-radius: 50%;
+	position: relative;
+	img{
+		position: absolute;
+		border-radius: 50%;
+		left: 70%;
+		width: 100%;
+	}
+}
+
+.user_title{
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-top: 1.5rem;
+}
+
+.like_button{
+	position: relative;
+	width: 30px;
+	height: 28px;
+	top: 5%;
+	left: 85%;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	
+	img{
+		position: relative;
+		top: 0.15em;
+		
+	}
+}

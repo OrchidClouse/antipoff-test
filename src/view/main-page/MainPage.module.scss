@@ -1,0 +1,43 @@
+.container{
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+
+}
+
+.cardsContainer{
+	display: grid;
+	margin: 3% 5%;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+	@media (max-width: 1750px) {
+		grid-template-columns: repeat(4, 1fr);
+		
+	}
+
+	@media (max-width: 1500px) {
+		grid-template-columns: repeat(3, 1fr);
+		
+	}
+
+	@media (max-width: 992px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 650px) {
+		grid-template-columns: repeat(1, 1fr);
+		margin: 15% 15%;
+	}
+}
+
+.moreButton{
+	
+	
+}
+
+.buttonContainer{
+	display: flex;
+	margin: 1% 0 5% 0;
+	justify-content: center;
+	
+}

@@ -1,26 +1,43 @@
+import { HeaderComponent } from 'components';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { MainPage, SignupPage, LoginPage, ProfilePage } from 'view';
+import {
+  Form,
+  Link,
+  Outlet,
+  RouterProvider,
+  createBrowserRouter,
+  redirect,
+  useActionData,
+  useFetcher,
+  useLocation,
+  useNavigation,
+  useRouteLoaderData,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    id: 'root',
+    path: '/',
+    Component: SignupPage,
+  },
+  {
+    path: '/main-page',
+    Component: MainPage
+  },
+  {
+    path: '/login',
+    Component: LoginPage
+  },
+  {
+    path: '/profile/:id',
+    Component: ProfilePage
+  }
+])
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} fallbackElement={<div>Loading...</div>}/>
 }
 
 export default App;

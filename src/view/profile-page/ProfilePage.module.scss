@@ -1,0 +1,40 @@
+.user_info{
+	display: flex;
+	flex-direction: row;
+
+	@media (max-width: 768px){
+		flex-direction: column-reverse;
+		align-items: start;
+	}
+}
+
+.description{
+	width: 630px;
+	margin: 3% 0 0 15%;
+
+	@media (max-width: 768px){
+		width: 300px;
+		margin: 0 0 0 10%;
+		
+	}
+}
+
+.contact_info{
+	margin: 3% 0 0 5%;
+	width: 20%;
+	li{
+		list-style: none;
+		margin-bottom: 8%;
+		img{
+			position: relative;
+			top: 0.20em;
+			margin-right: 3%;
+		}
+	}
+
+	@media (max-width: 768px){
+		margin: 8% 0 0 0;
+		align-items: start;
+		
+	}
+}
